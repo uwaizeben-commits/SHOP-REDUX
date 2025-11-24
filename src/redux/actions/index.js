@@ -1,13 +1,15 @@
+// For Add Item to Cart
 export const addItem = (product) => {
-  return {
-    type: 'ADD_ITEM',
-    payload: product
-  }
+    return{
+        type: "ADDITEM",
+        payload: product
+    }
 }
 
-export const delItem = (product) => {
-  return{
-    type: 'DELITEM',
-    payload: product
-  }
+// For Delete Item From Cart
+export const deleteItem = (product) => {
+    return{
+        type: "DELITEM",
+        payload: product
+    }
 }

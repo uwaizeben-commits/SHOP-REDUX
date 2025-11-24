@@ -7,11 +7,11 @@ const addItems = (state = addItem, action) => {
         break;
 
     case 'DELITEM':
-      return state.filter((item) => item.id !== action.payload.id);
+      return state.filter((x) => x.id !== action.payload.id);
       break;
 
     default: return state
   }
 }
 
-export default addItems
+export default addItems;
